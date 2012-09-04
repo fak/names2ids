@@ -11,11 +11,7 @@ momo.sander@googlemail.com
 def name2id(name, outformat):
 
   import cirpy
-  import chemspipy
-  import queryDevice  
-
-
-  idDict = {}
+  import chemspipy 
   
   idstring = None
   source = None
