@@ -48,17 +48,7 @@ def smiles2stdinchikey(smiles):
   import cirpy
   import queryDevice
 
-  idstring = None
-  source = None
+  if smiles is None: return None
+  stdinchikey = cirpy.resolve(smiles, 'stdinchikey')
 
-  if idstring is None:
-    idstring = cirpy.resolve(smiles, 'stdinchikey')
-    source = 'NCI'
-  try:
-    idstring = (idstring.rstrip(),source)
-  except AttributeError:
-    idstring  = (idstring[0].rstrip(),source)
-    print 'There were multiple results for: ', name, ' using: ', idString[0], '\n', idstring
-
-  return idstring
-
+  return stdinchikey
