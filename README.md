@@ -1,4 +1,4 @@
-This script uses Cameron Neylon's [chemspipy.py](https://github.com/cameronneylon/ChemSpiPy) and Matt Swain's [CIRpy](https://github.com/mcs07/CIRpy) to convert a compound name into a chemical identifier.
+This script uses Cameron Neylon's [chemspipy.py](https://github.com/cameronneylon/ChemSpiPy) and Matt Swain's [CIRpy](https://github.com/mcs07/CIRpy) to convert a compound name into a chemical identifier. The output format can be specified (eg 'smiles', 'stdinchikey'...)
 
 The script operates in three steps:
 * CIRpy to query the [NCI structure resolver](http://cactus.nci.nih.gov/chemical/structure/documentation)
